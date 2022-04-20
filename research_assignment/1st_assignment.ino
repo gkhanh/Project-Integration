@@ -1,6 +1,7 @@
-#include <ESP8266WiFi.h>
+//#include <ESP8266WiFi.h>
 #include <WiFiClient.h>
-#include <ESP8266WebServer.h>
+#include <WebServer.h>
+//#include <ESP8266WebServer.h>
 #include <esp8266-google-home-notifier.h>  //https://github.com/horihiro/esp8266-google-home-notifier
                                            //https://github.com/horihiro/esp8266-google-tts
 //#include "secret.h"
@@ -19,12 +20,12 @@
 //#define WLAN_SSID     "Gi_TTGO"
 //#define WLAN_PASS     "obbf5496"
 
-const char GoogleHomeName[] = "Living Room speaker";  //Must match the name on Google Home APP
+const char GoogleHomeName[] = "Master bedroom speaker";  //Must match the name on Google Home APP
 
 const char *host= "GoogleSay";
-String ttstext = "Welcome to Esp8266 TTS";
+String ttstext = "Welcome to Esp32 TTS";
 
-ESP8266WebServer server(80);
+WebServer server(80);
 GoogleHomeNotifier ghn;
 
 void handleRoot() {

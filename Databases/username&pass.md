@@ -8,3 +8,5 @@ Mariadb password: Giakhanh2002
 phpmyadmin username: pi
 phpmyadmin password: pi
 
+MySQL localhost username: khanh
+Password: 05022002

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project WebUI</title>
-    <link rel="stylesheet" href="styles.css"><!--Link .css file to html-->
+    <link rel="stylesheet" href="mainstyles.css"><!--Link .css file to html-->
     <style>
         body{
             background-image: url("./img/images.jpg");
@@ -26,16 +26,16 @@
             </div>
             <ul class="navbar_menu">
                 <li class="navbar_item">
-                    <a href="#home" class="navbar_links" id="home-page">HOME</a>
+                    <a href="#home" class="navbar_links" id="home-page">HOME <ion-icon name="home-outline"></ion-icon></a>
                 </li>
                 <li class="navbar_item">
-                    <a href="#about" class="navbar_links" id="about-page">ABOUT</a>
+                    <a href="#about" class="navbar_links" id="about-page">ABOUT <ion-icon name="information-circle-outline"></ion-icon></a>
                 </li>
                 <li class="navbar_btn">
-                    <a href="#data" class="button" id="data-page">DATA</a>
+                    <a href="data.html" class="button" id="data-page">DATA<ion-icon name="medkit-outline"></ion-icon></a>
                 </li>
                 <li class="navbar_btn">
-                    <a href="#info" class="button" id="info-page">INFO</a>
+                    <a href="#info" class="button" id="info-page">INFO<ion-icon name="person-outline"></ion-icon></a>
                 </li>
             </ul>
         </div>
@@ -45,9 +45,10 @@
         <div class="hero_container">
             <h1 class="hero_heading"><span>Welcome to the website</span></h1>
             <p class="hero_description">This is the website designed to help Doctors keep track with patient's health with graphs and statistics</p>
-            <button class="main_btn"><a href="">EXPLORE!</a></button>
         </div>
     </div>
     <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

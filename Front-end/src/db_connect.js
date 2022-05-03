@@ -11,7 +11,7 @@ var con = mysql.createConnection({
 con.connect(function(err) {
   if (err) throw err;
   console.log("Connected!");
-  con.query("SELECT * FROM city", function (err, result, fields) {
+  con.query("SELECT * FROM city WHERE id BETWEEN 1 AND 4", function (err, result, fields) {
     if (err){throw err;} 
     else{console.log(result);}
   });

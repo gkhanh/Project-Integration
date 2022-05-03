@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@mysql/xdevapi": "8.0.29"
+    "@mysql/xdevapi": "8.0.29",
+    "mysql": "^2.18.1"
   }
 }

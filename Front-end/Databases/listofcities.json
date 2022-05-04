@@ -1,0 +1,32 @@
+{
+  "1": {
+    "countrycode": "AFG",
+    "district": "Kabol",
+    "name": "Kabul",
+    "population": 1780000
+  },
+  "2": {
+    "countrycode": "AFG",
+    "district": "Qandahar",
+    "name": "Qandahar",
+    "population": 237500
+  },
+  "3": {
+    "countrycode": "AFG",
+    "district": "Herat",
+    "name": "Herat",
+    "population": 186800
+  },
+  "4": {
+    "countrycode": "AFG",
+    "district": "Balkh",
+    "name": "Mazar-e-Sharif",
+    "population": 127800
+  },
+  "5": {
+    "countrycode": "NLD",
+    "district": "Noord-Holland",
+    "name": "Amsterdam",
+    "population": 731200
+  }
+}

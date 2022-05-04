@@ -7,25 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="datastyle.css">
     <title>Data display page</title>
+    <script>
+        /*window.onload = function () {
+
+            var dataPoints = [];
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                    text: "Daily Sales Data"
+                },
+                axisY: {
+                    title: "Units",
+                    titleFontSize: 24,
+                    includeZero: true
+                },
+                data: [{
+                    type: "column",
+                    yValueFormatString: "#,### Units",
+                    dataPoints: dataPoints
+                }]
+            });
+
+            function addData(data) {
+                for (var i = 0; i < data.length; i++) {
+                    dataPoints.push({
+                        x: new Date(data[i].date),
+                        y: data[i].units
+                    });
+                }
+                chart.render();
+            }
+            $.getJSON("http://192.168.1.91:8080/Front-end/Databases/listofcities.json", addData);
+        }*/
+        window.onload = function () {
+            var dataPoints = [];
+            var chart = new CanvasJS.Chart("chartContainer", {
+                title: {
+                    text: "Rendering Chart with dataPoints from External JSON"
+                },
+                data: [{
+                    type: "line",
+                    dataPoints: dataPoints,
+                }]
+            });
+            $.getJSON("http://192.168.1.91:8080/Front-end/Databases/listofcities.json", function (data) {
+                $.each(data, function (key, value) {
+                    dataPoints.push({ x: value[0], y: parseInt(value[1]) });
+                });
+                chart.render();
+            });
+        }
+    </script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="./src/db_display.js"></script>
 </head>
 
 <body>
     <!--Hero title section-->
     <div class="hero">
         <div class="hero_container">
-            <h1 class="hero_heading">User's Health data graphs</h1>
+            <h1 class="hero_heading">data graphs</h1>
             <!--<button class="main__btn"><a href="#">Explore</a></button>-->
         </div>
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
     </div>
-    <!--Canvas Section-->
-    <canvas id="myChart"></canvas>
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- loading a javascript library for data visualization Charts.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-    <!--Local .json file-->
-    <script src="./Databases/listofcities.json"></script>
-    <script src="./src/db_display.js"></script>
 </body>
 
 </html>

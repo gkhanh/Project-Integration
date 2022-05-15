@@ -19,6 +19,15 @@
     font-size: 20px;
 }
 
+.chartCard {
+    width: 100vw;
+    height: calc(100vh - 40px);
+    background: rgba(255, 26, 104, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .chartBox {
     width: 700px;
     padding: 20px;
@@ -44,7 +53,7 @@
     text-align: center;
     padding: 30px;
 }
-  
+
 .hero_heading {
     font-size: 20px;
     margin-bottom: 20px;

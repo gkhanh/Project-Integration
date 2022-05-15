@@ -1,32 +1,60 @@
 {
-  "1": {
-    "countrycode": "AFG",
-    "district": "Kabol",
-    "name": "Kabul",
-    "population": 1780000
-  },
-  "2": {
-    "countrycode": "AFG",
-    "district": "Qandahar",
-    "name": "Qandahar",
-    "population": 237500
-  },
-  "3": {
-    "countrycode": "AFG",
-    "district": "Herat",
-    "name": "Herat",
-    "population": 186800
-  },
-  "4": {
-    "countrycode": "AFG",
-    "district": "Balkh",
-    "name": "Mazar-e-Sharif",
-    "population": 127800
-  },
-  "5": {
-    "countrycode": "NLD",
-    "district": "Noord-Holland",
-    "name": "Amsterdam",
-    "population": 731200
-  }
+  "ListOfThings": [
+    {
+      "CountryCode": "AFG",
+      "District": "Kabol",
+      "ID": 1,
+      "Name": "Kabul",
+      "Population": 1780000
+    },
+    {
+      "CountryCode": "AFG",
+      "District": "Qandahar",
+      "ID": 2,
+      "Name": "Qandahar",
+      "Population": 237500
+    },
+    {
+      "CountryCode": "AFG",
+      "District": "Herat",
+      "ID": 3,
+      "Name": "Herat",
+      "Population": 186800
+    },
+    {
+      "CountryCode": "AFG",
+      "District": "Balkh",
+      "ID": 4,
+      "Name": "Mazar-e-Sharif",
+      "Population": 127800
+    },
+    {
+      "CountryCode": "NLD",
+      "District": "Noord-Holland",
+      "ID": 5,
+      "Name": "Amsterdam",
+      "Population": 731200
+    },
+    {
+      "CountryCode": "NLD",
+      "District": "Zuid-Holland",
+      "ID": 6,
+      "Name": "Rotterdam",
+      "Population": 593321
+    },
+    {
+      "CountryCode": "NLD",
+      "District": "Zuid-Holland",
+      "ID": 7,
+      "Name": "Haag",
+      "Population": 440900
+    },
+    {
+      "CountryCode": "NLD",
+      "District": "Utrecht",
+      "ID": 8,
+      "Name": "Utrecht",
+      "Population": 234323
+    }
+  ]
 }

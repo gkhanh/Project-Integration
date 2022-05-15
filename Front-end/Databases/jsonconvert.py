@@ -7,23 +7,28 @@ if connection:
 else:
     print("Connection Not Established")
 
-class create_dict(dict): 
+#class create_dict(dict): 
     # __init__ function 
-    def __init__(self): 
-        self = dict() 
+    #def __init__(self): 
+        #self = dict() 
     # Function to add key:value 
-    def add(self, key, value): 
-        self[key] = value
+    #def add(self, key, value): 
+        #self[key] = value
 
-mydict = create_dict()
-select_table = """SELECT * FROM city LIMIT 5"""
-cursor = connection.cursor()
+#mydict = create_dict()
+#myArr = [mydict]
+
+#
+select_table = "SELECT * FROM city LIMIT 8"
+cursor = connection.cursor(dictionary=True)
 cursor.execute(select_table)
 result = cursor.fetchall()
+jsonResult = {"ListOfThings": result}
 
-for row in result:
-    mydict.add(row[0],({"name":row[1],"countrycode":row[2],"district":row[3],"population":row[4]}))
-stud_json = json.dumps(mydict, indent=2, sort_keys=True)
+#for row in result:
+    #mydict.add(row[0],{"name":row[1],"countrycode":row[2],"district":row[3],"population":row[4]})
+    
+stud_json = json.dumps(jsonResult, indent=2, sort_keys=True)
 
 with open("./Front-end/Databases/listofcities.json", "w") as f:
     f.write(stud_json)

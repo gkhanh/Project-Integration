@@ -7,62 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="datastyle.css">
     <title>Data display page</title>
-    <script>
-        /*window.onload = function () {
-
-            var dataPoints = [];
-
-            var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                theme: "light2",
-                title: {
-                    text: "Daily Sales Data"
-                },
-                axisY: {
-                    title: "Units",
-                    titleFontSize: 24,
-                    includeZero: true
-                },
-                data: [{
-                    type: "column",
-                    yValueFormatString: "#,### Units",
-                    dataPoints: dataPoints
-                }]
-            });
-
-            function addData(data) {
-                for (var i = 0; i < data.length; i++) {
-                    dataPoints.push({
-                        x: new Date(data[i].date),
-                        y: data[i].units
-                    });
-                }
-                chart.render();
-            }
-            $.getJSON("http://192.168.1.91:8080/Front-end/Databases/listofcities.json", addData);
-        }*/
-        window.onload = function () {
-            var dataPoints = [];
-            var chart = new CanvasJS.Chart("chartContainer", {
-                title: {
-                    text: "Rendering Chart with dataPoints from External JSON"
-                },
-                data: [{
-                    type: "line",
-                    dataPoints: dataPoints,
-                }]
-            });
-            $.getJSON("http://192.168.1.91:8080/Front-end/Databases/listofcities.json", function (data) {
-                $.each(data, function (key, value) {
-                    dataPoints.push({ x: value[0], y: parseInt(value[1]) });
-                });
-                chart.render();
-            });
-        }
-    </script>
-    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script src="./src/db_display.js"></script>
 </head>
 
 <body>
@@ -72,8 +16,18 @@
             <h1 class="hero_heading">data graphs</h1>
             <!--<button class="main__btn"><a href="#">Explore</a></button>-->
         </div>
-        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
     </div>
+    <div class="chartMenu">
+        <p>Sample Chart</p>
+    </div>
+    <div class="chartCard">
+        <div class="chartBox">
+            <canvas id="myChart"></canvas>
+            <button onclick="updateChart()">Fetch Now</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./src/db_display.js"></script>
 </body>
 
 </html>

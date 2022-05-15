@@ -20,10 +20,20 @@
     <div class="chartMenu">
         <p>Sample Chart</p>
     </div>
+    <div>
+        <button onclick="updateChart()">Update</button>
+    </div>
     <div class="chartCard">
+        <!--1st chart-->
+        
         <div class="chartBox">
             <canvas id="myChart"></canvas>
-            <button onclick="updateChart()">Fetch Now</button>
+            
+        </div>
+        <!--2nd chart-->
+        <div class="chartBox">
+            <canvas id="lineChart"></canvas>
+
         </div>
     </div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>

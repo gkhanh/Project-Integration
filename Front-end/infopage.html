@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="infopagestyle.css">
+    <title>ESP32 Result</title>
+</head>
+<body>
+    <!--<div class="wrapper" id="refresh">
+		<div class="col_3">
+		</div>
+		<div class="col_3" >
+			<?php echo '<h1 style="text-align: center;">The status of the LED is: '.$row['status'].'</h1>';?>
+			
+			<div class="col_3">
+			</div>
+			
+			<div class="col_3" style="text-align: center;">
+			<form action="index.php" method="post" id="LED" enctype="multipart/form-data">			
+				<input id="submit_button" type="submit" name="toggle_LED" value="Toggle LED" />
+			</form>
+				
+			<script type="text/javascript">
+			$(document).ready (function () {
+				var updater = setTimeout (function () {
+					$('div#refresh').load ('index.php', 'update=true');
+				}, 1000);
+			});
+			</script>
+			<br>
+			<br>
+			</div>
+			<div class="col_3">
+			</div>
+		</div>
+		<div class="col_3">
+		</div>
+	</div>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+	<script src="./src/mqttbroker.js"></script>
+</body>
+</html>

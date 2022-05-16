@@ -1,0 +1,41 @@
+.wrapper{
+    width: 100%;
+    padding-top: 50px;
+}
+.col_3{
+    width: 33.3333333%;
+    float: left;
+    min-height: 1px;
+}
+#submit_button{
+    background-color: #2bbaff; 
+    color: #FFF; 
+    font-weight: bold; 
+    font-size: 40; 
+    border-radius: 15px;
+    text-align: center;
+}
+.led_img{
+    height: 400px;		
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .col_3 {
+        width: 100%;
+    }
+    .wrapper{
+        width: 100%;
+        padding-top: 5px;
+    }
+    .led_img{
+        height: 300px;		
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

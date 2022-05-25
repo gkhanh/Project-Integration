@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="infopagestyle.css">
     <title>ESP32 Result</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <!--<div class="wrapper" id="refresh">
@@ -38,7 +40,53 @@
 		<div class="col_3">
 		</div>
 	</div>-->
+	<div class="wrapper" id="refresh">
+		<div class="col_3">
+		</div>
+		<div class="col_3" >
+			<?php echo '<h1 style="text-align: center;">The status of the LED is: '.$row['status'].'</h1>';?>
+			<div class="col_3">
+			</div>
+			<div class="col_3" style="text-align: center;">
+			<form action="infopage.html" method="post" id="LED" enctype="multipart/form-data">			
+				<input id="submit_button" type="submit" name="toggle_LED" value="Toggle LED" />
+			</form>
+			<script type="text/javascript">
+			$(document).ready (function () {
+				var updater = setTimeout (function () {
+					$('div#refresh').load ('infopage.html', 'update=true');
+				}, 1000);
+			});
+			</script>
+			<br>
+			<br>
+			<?php
+				if($row['status'] == 0){?>
+				<div class="led_img">
+					<img id="contest_img" src="./img/led_off.png" width="100%" height="100%">
+				</div>
+			<?php	
+				}
+				else{ ?>
+				<div class="led_img">
+					<img id="contest_img" src="./img/led_on.png" width="100%" height="100%">
+				</div>
+			<?php
+				}
+			?>
+			<?php
+			
+			?>
+			</div>	
+				<div class="col_3">
+			</div>
+		</div>
+		<div class="col_3">
+		</div>
+	</div>
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
-	<script src="./src/mqttbroker.js"></script>
+	<!--<script src="./src/mqttbroker.js"></script>-->
+	<script src="./src/esp32_update.php" type="text/javascript"></script>
 </body>
 </html>

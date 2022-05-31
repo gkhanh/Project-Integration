@@ -5,8 +5,16 @@ Raspberry Pi IP Address: 192.168.1.165
 Mariadb username: root
 Mariadb password: Giakhanh2002
 
+000webhost database info:
+username: projectg7
+password: @Projectintgroup7
+
 phpmyadmin username: pi
 phpmyadmin password: pi
 
 MySQL localhost username: khanh
 Password: 05022002
+
+email account for 000webhost:
+email: projectg72022@gmail.com
+password: Projectint

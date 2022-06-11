@@ -2,7 +2,9 @@ This is the manual instruction for how to establish our webserver (both locally 
 
 1. Access this website: https://console.firebase.google.com/u/5/project/projectintegration-c0d16/database/projectintegration-c0d16-default-rtdb/data 
    to view firebase project.
-   - email: 
+   Information below is our project email:
+   - email: projectg72022@gmail.com
+   - password: 
 
 2. After cloning the whole folder (Front-end) to PC, open cmd and type:
   - 'firebase serve': establish webserver locally

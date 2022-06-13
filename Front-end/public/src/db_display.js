@@ -4,9 +4,8 @@ var heartbeat;
 
 function updateChart() {
   async function fetchData() {
-    const url = "http://localhost:5000/projectintegration-c0d16-default-rtdb-export.json";
-    //const url = "https://projectintegration-c0d16.web.app/projectintegration-c0d16-default-rtdb-export.json";
-    //const url = "https://projectintegration-c0d16-default-rtdb.europe-west1.firebasedatabase.app/";
+    //const url = "http://localhost:5000/projectintegration-c0d16-default-rtdb-export.json";
+    const url = "https://projectintegration-c0d16.web.app/projectintegration-c0d16-default-rtdb-export.json";
     const response = await fetch(url);
     //Wait until the request has been completed
     const datapoints = await response.json();

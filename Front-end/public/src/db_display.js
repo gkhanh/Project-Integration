@@ -25,7 +25,7 @@ function updateChart() {
       })
     time = datapoints.Patient1.map(
       function(index){
-        return index.timestamp;
+        return index.Time;
       })
     console.log(timestamp);
     console.log(temperature);
@@ -43,7 +43,7 @@ function updateChart() {
 
 // setup first chart
 const data = {
-  labels: temperature,
+  labels: timestamp,
   datasets: [{
     label: 'Patient 1 health status',
     data: heartbeat,
@@ -86,7 +86,7 @@ const myChart = new Chart(
 
 //graph 2
 const data2 = {
-  labels: temperature,
+  labels: timestamp,
   datasets: [{
     label: 'Patient 2 health status',
     data: heartbeat,

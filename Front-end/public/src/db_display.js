@@ -30,11 +30,11 @@ function updateChart() {
     console.log(timestamp);
     console.log(temperature);
     console.log(heartbeat);
-    myChart.config.data.labels = temperature;
+    myChart.config.data.labels = timestamp;
     myChart.config.data.datasets[0].data = heartbeat;
     myChart.update();
     
-    lineChart.config.data.labels = temperature;
+    lineChart.config.data.labels = timestamp;
     lineChart.config.data.datasets[0].data = heartbeat;
     lineChart.update();
 

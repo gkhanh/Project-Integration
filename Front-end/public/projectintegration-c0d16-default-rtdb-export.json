@@ -1,39 +1,94 @@
 {
   "Patient1": [
     {
-      "Time": "10:57",
-      "heartbeat": "82",
-      "temperature": "38"
-    },
-    {
-      "Time": "10:58",
-      "heartbeat": "35",
+      "Time": "19:03",
+      "heartbeat": "29",
       "temperature": "41"
     },
     {
-      "Time": "10:58",
-      "heartbeat": "54",
-      "temperature": "40"
+      "Time": "19:04",
+      "heartbeat": "73",
+      "temperature": "36"
     },
     {
-      "Time": "10:59",
-      "heartbeat": "42",
-      "temperature": "38"
-    },
-    {
-      "Time": "10:59",
-      "heartbeat": "29",
+      "Time": "19:05",
+      "heartbeat": "96",
       "temperature": "35"
     },
     {
-      "Time": "11:00",
-      "heartbeat": "56",
+      "Time": "19:06",
+      "heartbeat": "90",
+      "temperature": "38"
+    },
+    {
+      "Time": "19:07",
+      "heartbeat": "14",
+      "temperature": "38"
+    },
+    {
+      "Time": "19:08",
+      "heartbeat": "52",
+      "temperature": "37"
+    },
+    {
+      "Time": "19:09",
+      "heartbeat": "6",
       "temperature": "39"
     },
     {
-      "Time": "11:00",
-      "heartbeat": "15",
+      "Time": "19:10",
+      "heartbeat": "37",
+      "temperature": "40"
+    },
+    {
+      "Time": "19:11",
+      "heartbeat": "87",
+      "temperature": "38"
+    },
+    {
+      "Time": "19:12",
+      "heartbeat": "69",
+      "temperature": "36"
+    },
+    {
+      "Time": "19:13",
+      "heartbeat": "66",
+      "temperature": "36"
+    },
+    {
+      "Time": "19:14",
+      "heartbeat": "51",
+      "temperature": "38"
+    },
+    {
+      "Time": "19:15",
+      "heartbeat": "40",
+      "temperature": "38"
+    },
+    {
+      "Time": "19:16",
+      "heartbeat": "103",
+      "temperature": "37"
+    },
+    {
+      "Time": "19:17",
+      "heartbeat": "115",
+      "temperature": "40"
+    },
+    {
+      "Time": "19:18",
+      "heartbeat": "17",
+      "temperature": "38"
+    },
+    {
+      "Time": "19:19",
+      "heartbeat": "44",
       "temperature": "39"
+    },
+    {
+      "Time": "19:20",
+      "heartbeat": "62",
+      "temperature": "35"
     }
   ]
 }

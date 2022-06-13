@@ -8,19 +8,23 @@
     <link rel="stylesheet" href="datastyle.css">
     <title>Data display page</title>
 </head>
+
 <body>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <div class="hero">
         <div class="hero_container">
-            <h1 class="hero_heading">data graphs</h1>
+            <h1 class="hero_heading">Data Graphs</h1>
         </div>
+        <button className="button" type="button" onclick="updateChart()">Update</button>
     </div>
     <div>
-        <button onclick="updateChart()">Update</button>
+    
     </div>
+        <!--<button onclick="updateChart()">Update</button>-->
+    
     <div class="chartCard">
         <div class="chartBox">
-            <canvas id="myChart"></canvas> 
+            <canvas id="myChart"></canvas>
         </div>
         <div class="chartBox">
             <canvas id="lineChart"></canvas>
@@ -31,7 +35,7 @@
             <canvas id="canvas"></canvas>
         </div>
     </div>
-    
+
     <script src="./src/db_display.js"></script>
 </body>
 

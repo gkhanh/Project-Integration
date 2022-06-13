@@ -23,7 +23,7 @@ function updateChart() {
       function(index){
         return index.temperature;
       })
-    time = datapoints.Patient1.map(
+    timestamp = datapoints.Patient1.map(
       function(index){
         return index.Time;
       })

@@ -1,78 +1,67 @@
 <!DOCTYPE html>
-<!--will this update the main or development?-->
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to Firebase Hosting</title>
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/9.8.3/firebase-app-compat.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/9.8.3/firebase-auth-compat.js"></script>
-  <script defer src="/__/firebase/9.8.3/firebase-database-compat.js"></script>
-  <script defer src="/__/firebase/9.8.3/firebase-firestore-compat.js"></script>
-  <script defer src="/__/firebase/9.8.3/firebase-functions-compat.js"></script>
-  <script defer src="/__/firebase/9.8.3/firebase-messaging-compat.js"></script>
-  <script defer src="/__/firebase/9.8.3/firebase-storage-compat.js"></script>
-  <script defer src="/__/firebase/9.8.3/firebase-analytics-compat.js"></script>
-  <script defer src="/__/firebase/9.8.3/firebase-remote-config-compat.js"></script>
-  <script defer src="/__/firebase/9.8.3/firebase-performance-compat.js"></script>
-  <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-  <title>Project WebUI</title>
-  <link rel="stylesheet" href="mainstyles.css">
-  <!--Link .css file to html-->
-  <style>
-    body {
-      background-image: url("./img/images.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet", href="./style.css">
 </head>
-
 <body>
-  <!--Navigation bar section-->
-  <nav class="navbar">
-    <div class="navbar_container">
-      <a href="#home" id="navbar_logo">PROJECT</a>
-      <div class="navbar_toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="navbar_menu">
-        <li class="navbar_item">
-          <a href="#home" class="navbar_links" id="home-page">HOME <ion-icon name="home-outline"></ion-icon></a>
-        </li>
-        <li class="navbar_item">
-          <a href="aboutpage.html" class="navbar_links" id="about-page">ABOUT <ion-icon
-              name="information-circle-outline"></ion-icon></a>
-        </li>
-        <li class="navbar_btn">
-          <a href="datapage.html" class="button" id="data-page">DATA<ion-icon name="medkit-outline"></ion-icon></a>
-        </li>
-        <li class="navbar_btn">
-          <a href="infopage.html" class="button" id="info-page">INFO<ion-icon name="person-outline"></ion-icon></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!--Hero Section-->
-  <div class="hero" id="home">
-    <div class="hero_container">
-      <h1 class="hero_heading"><span>Welcome to the website</span></h1>
-      <p class="hero_description">This is the website designed to help Doctors keep track with patient's health with
-        graphs and statistics</p>
-    </div>
-  </div>
-  <script src="./src/app.js" type="text/javascript"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+    <main>
+<!--        make spot for location
+            check if google maps api
+            api key from the firebase-->
+        <section class="glass glass-bg">
+            <div class="container">
+                <div class="upper">
+                    <div class="pupper" id="p1">
+<!--                        <div class="personal">-->
+                            <img src="generic-img.jpeg" class="pic" id="img1">
+<!--                            <div class="personal-info">-->
+<!--                                <img src="generic-img.jpeg" class="pic" id="img1">-->
+<!--                                <p>-->
+                                <div class="description">
+                                    </p><h3 class="Pname" id="p1-name">Patient One</h3>
+<!--                                <p>-->
+                                    </p><h5  class="Pgp" id="p1-gp">Dr. S.Marsh</h5>
+<!--                                <p>-->
+                                    </p><h4 class = medication id="p1-med">Next medication: keta 08-06-2022 8:00AM</h4>
+                                </div>
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+                    <div class="pupper content" id="p2">
+                        <img src="generic-img.jpeg" class="pic" id="img2">
+<!--                        <p>-->
+                        <h3 class="Pname" id="p2-name">Patient Two</h3>
+<!--                        </p>-->
+<!--                        <p>-->
+                        <h5 class="Pgp" id="p2-gp">Dr. E.Cartman</h5>
+<!--                        </p>-->
+<!--                        <p>-->
+                        <h4 class = medication id="p2-med">Next medication: keta 08-06-2022 8:00AM</h4>
+<!--                        </p>-->
 
+                    </div>
+                    <div class="pupper content" id="p3">
+                        <img src="generic-img.jpeg" class="pic" id="img3">
+                        <div class="personal">
+                            <p>
+                            <h3 class="Pname" id="p3-name">Patient Three</h3>
+                            </p>
+                            <p>
+                            <h5 class="Pgp" id="p3-gp">Dr. K.Broflovski</h5>
+                            </p>
+                            <p>
+                            <h4 class = medication id="p3-med">Next medication: keta 08-06-2022 8:00AM</h4>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+<!--    <div class="circle1"></div>-->
+<!--    <div class="circle2"></div>-->
+</body>
 </html>

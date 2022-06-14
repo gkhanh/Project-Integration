@@ -1,0 +1,39 @@
+{
+  "Patient1": [
+    {
+      "Time": "10:57",
+      "heartbeat": "82",
+      "temperature": "38"
+    },
+    {
+      "Time": "10:58",
+      "heartbeat": "35",
+      "temperature": "41"
+    },
+    {
+      "Time": "10:58",
+      "heartbeat": "54",
+      "temperature": "40"
+    },
+    {
+      "Time": "10:59",
+      "heartbeat": "42",
+      "temperature": "38"
+    },
+    {
+      "Time": "10:59",
+      "heartbeat": "29",
+      "temperature": "35"
+    },
+    {
+      "Time": "11:00",
+      "heartbeat": "56",
+      "temperature": "39"
+    },
+    {
+      "Time": "11:00",
+      "heartbeat": "15",
+      "temperature": "39"
+    }
+  ]
+}

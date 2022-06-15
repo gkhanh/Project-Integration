@@ -50,18 +50,19 @@ main{
 /*    display: inline-block;*/
 /*}*/
 
-hr{
-    float: top;
-}
+/*hr{*/
+/*    float: top;*/
+/*}*/
 
 .personal{
     /*float: left;*/
     display: inline-block;
+    width: 100%;
 }
 
-.vitals{
-    float: top;
-}
+/*.vitals{*/
+/*    float: top;*/
+/*}*/
 
 /*.description{*/
 /*    float: left;*/
@@ -77,6 +78,11 @@ hr{
 
 .Pgp, .medication{
     margin-top: 3px;
+}
+
+td, th{
+    border: 2px solid darkslateblue;
+
 }
 
 

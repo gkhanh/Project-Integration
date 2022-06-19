@@ -1,44 +1,44 @@
 {
   "Patient1": [
     {
-      "Time": "19:03",
-      "heartbeat": "29",
-      "temperature": "41"
+      "Time": "19:28:20",
+      "heartbeat": "0.00",
+      "temperature": "40"
     },
     {
-      "Time": "19:04",
-      "heartbeat": "73",
-      "temperature": "36"
+      "Time": "19:29:20",
+      "heartbeat": "0.00",
+      "temperature": "38"
     },
     {
-      "Time": "19:05",
-      "heartbeat": "96",
+      "Time": "19:30:20",
+      "heartbeat": "0.00",
+      "temperature": "38"
+    },
+    {
+      "Time": "19:31:20",
+      "heartbeat": "0.00",
+      "temperature": "40"
+    },
+    {
+      "Time": "19:32:20",
+      "heartbeat": "0.00",
       "temperature": "35"
     },
     {
-      "Time": "19:06",
-      "heartbeat": "90",
-      "temperature": "38"
+      "Time": "19:33:20",
+      "heartbeat": "0.00",
+      "temperature": "40"
     },
     {
-      "Time": "19:07",
-      "heartbeat": "14",
-      "temperature": "38"
-    },
-    {
-      "Time": "19:08",
-      "heartbeat": "52",
-      "temperature": "37"
-    },
-    {
-      "Time": "19:09",
-      "heartbeat": "6",
+      "Time": "19:34:20",
+      "heartbeat": "0.00",
       "temperature": "39"
     },
     {
-      "Time": "19:10",
-      "heartbeat": "37",
-      "temperature": "40"
+      "Time": "19:35:20",
+      "heartbeat": "0.00",
+      "temperature": "35"
     },
     {
       "Time": "19:11",

@@ -21,7 +21,7 @@ function updateChart() {
     )
     temperature = datapoints.Patient1.map(
       function(index){
-        return index.temperature;
+        return index.gps_lat;
       })
     timestamp = datapoints.Patient1.map(
       function(index){

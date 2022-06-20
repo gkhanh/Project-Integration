@@ -20,4 +20,8 @@ function initMap() {
 function getLatitude(){
 
 }
+
+function getLongtitude(){
+  
+}
   window.initMap = initMap;
